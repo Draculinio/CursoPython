@@ -5,19 +5,21 @@
 #3. Al inicio del programa preguntar cuantas personas registrar
 #4. Hacer que el programa que se hizo se ejecute esas n veces que se pusieron en el punto 3
 #5. Subir el programa al repositorio creado.
+def estado(edad):
+    if edad<0:
+        return 'Usted no nació'
+    elif edad <18:
+        return 'Usted es menor de edad'
+    elif edad <65:
+        return 'Usted es mayor de edad'
+    else:
+        return 'Usted es jubilado'
 
 clientes = int(input('Ingrese número de clientes: '))
 for i in range(clientes):
     print(i)
     edad = 0
-    check_edad = False
     while edad <1 or edad>120:
         edad = int(input('Digame su edad: '))
-    if edad<0:
-        print('Usted no nació')
-    elif edad <18:
-        print('Usted es menor de edad')
-    elif edad <65:
-        print('Usted es mayor de edad')
-    else:
-        print('Usted es jubilado')
+    estado_final = estado(edad)
+    print(estado_final)
