@@ -21,5 +21,4 @@ for i in range(clientes):
     edad = 0
     while edad <1 or edad>120:
         edad = int(input('Digame su edad: '))
-    estado_final = estado(edad)
-    print(estado_final)
+    print(estado(edad))
