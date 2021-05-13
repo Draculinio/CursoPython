@@ -1,0 +1,6 @@
+| MODO | Descripcion       |
+| r    | Lectura           |
+| w    | Escritura         |
+| a    | Append            |
+| rb   | lectura binaria   |
+| wb   | escritura binaria |
